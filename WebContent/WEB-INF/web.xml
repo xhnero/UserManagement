@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>UserDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+        <servlet-name>UserLogin</servlet-name>
+        <servlet-class>com.servlet.UserLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserLogin</servlet-name>
+        <url-pattern>/UserLogin</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserInsert</servlet-name>
+        <servlet-class>com.servlet.UserInsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserInsert</servlet-name>
+        <url-pattern>/UserInsert</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>UserDelete</servlet-name>
+        <servlet-class>com.servlet.UserDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserDelete</servlet-name>
+        <url-pattern>/UserDelete</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UserEdit</servlet-name>
+        <servlet-class>com.servlet.UserEdit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserEdit</servlet-name>
+        <url-pattern>/UserEdit</url-pattern>
+    </servlet-mapping>
+</web-app>
