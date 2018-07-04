@@ -13,17 +13,19 @@ import com.user.dto.UserDto;
 public class UserLogin extends HttpServlet {
 	@Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try {
+		try {
             UserDao userDao = new UserDao();
             String email = req.getParameter("email");
             String password = req.getParameter("password");
             List<UserDto> userDtos = userDao.getAllUser();
             if(userDtos.size()>0){
                 req.setAttribute("userList",userDtos);
-                req.getRequestDispatcher("dashboard.jsp").forward(req,resp);
+                req.getRequestDispatcher("userDashboard.jsp").forward(req,resp);
             }
         } catch (Exception e) {
 
         }
+		
+       
     }
 }

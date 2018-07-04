@@ -24,7 +24,7 @@ public class UserEdit extends HttpServlet {
 	        	request.setAttribute("userDto",userDto);
 	        	request.setAttribute("isUpdate","1");
 	        	request.setAttribute("userList",userDtos);
-	        	request.getRequestDispatcher("dashboard.jsp").forward(request,response);
+	        	request.getRequestDispatcher("userDashboard.jsp").forward(request,response);
 	        }
 		}catch(Exception e) {
 			

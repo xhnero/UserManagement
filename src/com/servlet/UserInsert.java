@@ -44,7 +44,7 @@ public class UserInsert extends HttpServlet {
             if(userDtos.size()>0){
             	req.setAttribute("msg",alert);
                 req.setAttribute("userList",userDtos);
-                req.getRequestDispatcher("dashboard.jsp").forward(req,resp);
+                req.getRequestDispatcher("userDashboard.jsp").forward(req,resp);
             }
         }catch (Exception ex){
             return;

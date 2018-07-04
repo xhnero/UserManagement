@@ -23,7 +23,7 @@ public class UserDelete extends HttpServlet{
 			List<UserDto> userDtos = userDao.getAllUser();
 		     if(userDtos.size()>0){
 		    	 request.setAttribute("userList",userDtos);
-		    	 request.getRequestDispatcher("dashboard.jsp").forward(request,reponse);
+		    	 request.getRequestDispatcher("userDashboard.jsp").forward(request,reponse);
 		     }
 		}catch (Exception e) {
 			// TODO: handle exception

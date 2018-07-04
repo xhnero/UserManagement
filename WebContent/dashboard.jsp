@@ -65,16 +65,6 @@
                     <th>Action</th>
                 </tr>
                 </thead>
-                <c:forEach items="${requestScope.userList}" var="row">
-                    <tr>
-                        <td><c:out value="${row.id}"></c:out></td>
-                        <td><c:out value="${row.name}"></c:out></td>
-                        <td><c:out value="${row.email}"></c:out></td>
-                        <td><c:out value="${row.password}"></c:out></td>
-                        <td><c:out value="${row.dob}"></c:out></td>
-                        <td><a href="UserEdit?id=${row.id}">Edit</a> | <a href="UserDelete?id=${row.id}">Delete</a></td>
-                    </tr>
-                </c:forEach>
                 <tbody>
                 </tbody>
             </table>
