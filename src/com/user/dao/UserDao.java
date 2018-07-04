@@ -14,7 +14,7 @@ public class UserDao {
         PreparedStatement statement = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection(url, "root", "xhnero131990");
+            conn = DriverManager.getConnection(url, "root", "root");
             if (conn != null) {
                 userDtos = new ArrayList<>();
                 statement = conn.prepareStatement("SELECT  * FROM user");
